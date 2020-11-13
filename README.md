@@ -5,6 +5,7 @@ This is made in Javascript using a really amazing physics engine called <a href=
 
 
 # Usage 
+Clone the repository, and just open <a href="mattertest.html"><b>mattertest.html</b></a><br>
 Its very simple to use just enter the <b>Angle of Projection</b> i.e. in anti-clockwise from +ve horizontal axis,<br> then enter <b>Velocity of Projection</b>, and press <b>Start</b> to start the simulation.
 <hr>
 
