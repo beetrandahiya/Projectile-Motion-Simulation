@@ -1,14 +1,8 @@
     
 function project(){
-    var angle = $("#angl").val();
-    angle=angle*(Math.PI)/180;
-
-    var v= $("#vel").val();
-    vx=v*(Math.cos(angle)); 
-    vy=-v*(Math.sin(angle));
-
-
-
+    document.getElementById('renderport').style.padding = "10px";
+    document.getElementById('ftr').style.position = 'relative' ;
+    
 
 
     // module aliases
@@ -31,19 +25,35 @@ var engine = Engine.create();
 
 // create a renderer
 var render = Render.create({
-    element: document.body,
+    element: document.getElementById('renderport'),
     engine: engine,
     options: {
-        width: 1500,
+        width: 1200,
+        height: 500,
+        //showVelocity: true,
+        //showCollisions: true,
         
         background : '#0f0f13'
     }
 });
 
+
+
+//calculating horizontal and vertical velocity
+
+var angle = $("#angl").val();
+    angle=angle*(Math.PI)/180;
+
+    var v= $("#vel").val();
+    vx=v*(Math.cos(angle)); 
+    vy=-v*(Math.sin(angle));
+
+
 // create two bodies and a ground
 // var boxA = Bodies.rectangle(200, 600, 40, 40);
-var ball = Bodies.circle(50,600, 30 , {friction: 0, frictionAir:0, restitution: 1 });
-var ground = Bodies.rectangle(400, 610, 2000, 60, { isStatic: true });
+//var ball1=Bodies.circle(50,440,30,{isStatic:true});
+var ball = Bodies.circle(50,440, 30 , {friction: 0, frictionAir:0, restitution: 1 });
+var ground = Bodies.rectangle(400, 500, 2000, 60, { isStatic: true });
 
 engine.world.gravity.y = 1;
 
@@ -106,6 +116,9 @@ var mouse = Mouse.create(render.canvas),
 World.add(engine.world, mouseConstraint);
 
 render.mouse = mouse;
+
+
+
 
 // run the engine
 Engine.run(engine);
