@@ -48,12 +48,14 @@ var angle = $("#angl").val();
     vx=v*(Math.cos(angle)); 
     vy=-v*(Math.sin(angle));
 
+    var coeffrst =$('#rst').val();
+
 
 // create two bodies and a ground
 // var boxA = Bodies.rectangle(200, 600, 40, 40);
 //var ball1=Bodies.circle(50,440,30,{isStatic:true});
-var ball = Bodies.circle(50,440, 30 , {friction: 0, frictionAir:0, restitution: 1 });
-var ground = Bodies.rectangle(400, 500, 2000, 60, { isStatic: true });
+var ball = Bodies.circle(50,440, 30 , {friction: 0, frictionAir:0, restitution: coeffrst, inverseInertia: 0 });
+var ground = Bodies.rectangle(400, 500, 2000, 60, {friction: 0, isStatic: true });
 
 engine.world.gravity.y = 1;
 
@@ -63,6 +65,8 @@ Matter.Body.setVelocity(ball, {x:vx , y:vy});
 
 // add all of the bodies to the world
 World.add(engine.world, [ground, ball]);
+
+
 
 
 
