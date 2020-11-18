@@ -18,11 +18,13 @@ Yea, I know there is a bit of problem with the first bounce, but i'm figuring th
 So, It will be done soon, and I'll be grateful if someone could help me out.
 
 # Change Log
+v.1.2 (11/18/2020)  <br>
+<ul><li>Now you can change Coefficient of Restitution </li></ul>
+
+
 v.1.1 ( 11 /14 /2020 ) <br>
 <ul><li> Improved UI </li>
   <li>1st bounce malfunction glitch fixed</li>
   </ul>
-  
-v.1.2 (11/18/2020)  <br>
-<ul><li>Now you can change Coefficient of Restitution </li></ul>
+
 
