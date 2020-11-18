@@ -6,7 +6,10 @@
 	padding: 0.5em;
 	color: black;
 	border-radius: 0;
+	outline: none;
+	transition: all 400ms;
 }
+
 body{
 	background-color: #f5f5f7;
 	color: #0f0f13;
@@ -14,12 +17,17 @@ body{
 
 
 }
+
 a{
 	text-decoration: none;
 	color: #0f0f13;
 }
+#rst{
+	margin-top:0;
+}
 form{
 	margin-top: 0;
+	margin-bottom: 0;
 }
 h1{
 	font-family: 'Sacramento', cursive;
