@@ -21,10 +21,14 @@
 	<div class="container-fluid text-center">
 		<h1>Projectile motion simulation</h1>
 		<form class="form">
-			<input type="text" placeholder="angle" class="frminp" id="angl">
-		    <input type="text" placeholder="velocity" class="frminp" id="vel">	
-		    <button type="button" class="btn btn-default" onClick="project()">Start</button>
-	    </form>
+			<input type="text" placeholder="Angle" class="frminp" id="angl">
+		<input type="text" placeholder="Velocity" class="frminp" id="vel">	
+		
+		
+
+	   <button type="button" class="btn btn-default" onClick="project()">Start</button>
+		</form>
+		<label for="rst">Coeff. of Restitution</label><input type="text" value="1" placeholder="Coeff. of Restitution" class="frminp" id="rst">	
 	    <div id="renderport"></div>
 
 	</div>
