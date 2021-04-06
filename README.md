@@ -3,11 +3,13 @@ Using this very simple simulator, You can visualize Projectile motion very easil
 This is made in Javascript using a really amazing physics engine called <a href="https://brm.io/matter-js/">matter.js
 <img src="https://brm.io/matter-js/img/matter-js.svg"></a>
 
-
+# Demo
+<a href="https://codepen.io/beetran/full/LYZqBaJ">Try now</a>
 # Usage 
 Clone the repository, and just open <a href="mattertest.html"><b>mattertest.html</b></a><br>
 Its very simple to use just enter the <b>Angle of Projection</b> i.e. in anti-clockwise from +ve horizontal axis,<br> then enter <b>Velocity of Projection</b>, and press <b>Start</b> to start the simulation.
 <hr>
+
 
 
 
